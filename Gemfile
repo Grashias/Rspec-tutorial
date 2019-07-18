@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '~> 4.2', '>= 4.2.11.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '< 1.4'
 # Use SCSS for stylesheets
@@ -49,10 +49,10 @@ end
 
 group :test do
   gem "faker", "~> 1.4.3"
-  gem "capybara", "~> 2.4.3"
+  gem 'capybara', '~> 3.26'
   gem "database_cleaner", "~> 1.3.0"
   gem "launchy", "~> 2.4.2"
-  gem "selenium-webdriver", "~> 2.43.0"
   gem 'shoulda-matchers', '~> 2.6.2'
+  gem 'webdrivers', '~> 4.1'
+  gem 'capybara-selenium', '~> 0.0.6'
 end
-
